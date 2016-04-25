@@ -1,0 +1,72 @@
+li.post-from-list{
+    background-size: cover;
+    height: 220px;
+    background-position: center;
+    margin: 0 !important;
+    position:relative;
+}
+.post-from-list > a{
+    display: block;
+    height: 100%;
+    border: none;
+    padding: 0 !important;
+    background: none !important;
+}
+.home-template main{padding:0;}
+.home-template main>.content{margin:0;padding:0}
+.post-title{
+	width: 80%;
+    color: #f8f8f8;
+    text-shadow: 0 .05em 0 rgba(0,0,0,.5);
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 30px !important;
+    border: none !important;
+    margin: 0.4rem auto;
+    position:relative;
+}
+@media(max-width:767px){
+    .post-title{font-size:20px;}
+    aside.cover.expanded{background:#333 !important;}
+}
+.post-title:hover{background-color: initial !important;}
+.post-date{color:#ddd!important;position: relative;font-size: 16px;padding-top: 10px; text-shadow: 0 .05em 0 rgba(0,0,0,.5);}
+.post-title, .post.tags, .post-date{display:block; float:none !important; text-align:center;}
+.home-template .post.tags{
+	position: absolute;
+	margin-top: -70px;
+	width: 100%;
+}
+.dark-layer{
+	width: 100%;
+    height: 100%;
+    background: rgba(25,25,25,.75);
+    position: absolute;
+}
+.dark-layer:hover, .dark-layer-hover{
+    background: rgba(25,25,25,.25);
+}
+
+.post.related{
+	padding-top:0px;
+}
+
+.you{margin-bottom: 10px;}
+
+.post.related a{
+	    height: 200px;
+background-size: cover;
+background-position: center;
+color: #fff;
+    border:none;        
+width: 50%;
+}
+.post.related a span{
+	background: rgba(25,25,25,.8);
+display: inline-block;
+position: relative;    
+font-size: 16px;
+text-align: center;
+padding: 5px;
+line-height: 17px;
+}
