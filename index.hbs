@@ -3,10 +3,13 @@
 <h1 style="text-align: center;" id="posts-headline">Writings.</h1>
 <ol id="posts-list">
   {{#foreach posts}}
-  <li>
-    <a href="{{url}}" title="link to {{{title}}}">{{title}}</a>
-    <time datetime="{{date format="YYYY-MM-DDTHH:MM"}}">{{date format="DD MMM YYYY"}}</time>
-    <span class="post tags">{{tags separator=" "}}</span>
+  <li class="post-from-list" style="background-image: url('{{image}}')">
+    <a href="{{url}}" title="link to {{{title}}}">
+      <div class="dark-layer"></div>
+      <time class="post-date" datetime="{{date format="YYYY-MM-DDTHH:MM"}}">{{date format="DD MMM YYYY"}}</time>
+      <h1 class="post-title">{{title}}</h1>
+    </a>
+    <div class="post tags">{{tags separator=" "}}</div>
   </li>
   {{/foreach}}
 </ol>
